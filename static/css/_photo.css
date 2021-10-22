@@ -1,7 +1,7 @@
 #photo { min-height: 100vh; }
 
 .photo-header {
-    background: url("/static/Photos/Gallery/BW_5340.jpg") no-repeat;
+    background: url("../Photos/Gallery/BW_5340.jpg") no-repeat;
     background-size: 100vw 100%;
     background-position: top center;
 

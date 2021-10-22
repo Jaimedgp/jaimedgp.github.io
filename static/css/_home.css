@@ -1,6 +1,6 @@
 /* PRESENTATION TITLE */
 #home {
-    background: url('/static/Photos/Home_page/bkgnd.png') no-repeat center center;
+    background: url('../Photos/Home_page/bkgnd.png') no-repeat center center;
     color: white;
     height: 100vh;
 
