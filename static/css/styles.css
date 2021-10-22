@@ -1,9 +1,9 @@
-@import "static/css/_home.css";
-@import "static/css/_code.css";
-@import "static/css/_academy.css";
-@import "static/css/_sport.css";
-@import "static/css/_photo.css";
-@import "static/css/_footer.css";
+@import "home.css";
+@import "code.css";
+@import "academy.css";
+@import "sport.css";
+@import "photo.css";
+@import "footer.css";
 
 
 html {
