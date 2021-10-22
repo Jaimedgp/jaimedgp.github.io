@@ -1,0 +1,16 @@
+.footer {
+    background: black;
+    height: 10vh;
+}
+
+.footer-content { margin: auto; }
+
+.footer-content > ul {
+    display: flex;
+    list-style: none;
+
+    float: right;
+}
+
+.footer-content ul > li { padding: 1rem; }
+.footer-content ul li > a { font-size: 3rem; }

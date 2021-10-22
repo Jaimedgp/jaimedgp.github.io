@@ -1,0 +1,122 @@
+#sport { background: whitesmoke; }
+
+.sport-activities {
+    display: grid;
+
+    grid-template-columns: 5% repeat(12, 1fr) 5%;
+    grid-template-rows: 5% repeat(3, 1fr) 5%;
+
+    position: relative;
+    margin: auto;
+}
+
+.activity {
+    align-self: center;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.activity img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    z-index: 1;
+    position: relative;
+
+    padding: 3rem;
+    max-height: 33vh;
+}
+
+.activity-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    z-index: 2;
+    position: relative;
+    background: white;
+
+    margin: 5% 3rem;
+    padding: 3rem;
+    border-radius: 3rem;
+
+    transition: 0.5s;
+}
+
+.activity-text > p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.strava-icon > a > img {
+    width: 100%;
+    margin: auto;
+
+    filter: grayscale(100%);
+}
+
+a > img:hover {
+    filter: grayscale(0%);
+}
+
+#handball {
+    grid-column: 3/8;
+    grid-row: 2/3;
+}
+#referee {
+    grid-column: 8/13;
+    grid-row: 2/3;
+}
+#bike {
+    grid-column: 2/6;
+    grid-row: 3/4;
+}
+#strava {
+    grid-column: 7/9;
+    grid-row: 3/4;
+
+    align-self: center;
+}
+#runner {
+    grid-column: 10/14;
+    grid-row: 3/4;
+}
+#triatlon {
+    grid-column: 5/11;
+    grid-row: 4/5;
+}
+
+#handball .activity-text { left: -100vw; }
+#handball:hover .activity-text { left: 0; }
+
+#bike .activity-text { left: -100vw; }
+#bike:hover .activity-text { left: 0; }
+
+#triatlon .activity-text { left: -100vw; }
+#triatlon:hover .activity-text { left: 0; }
+
+#referee .activity-text { left: 100vw; }
+#referee:hover .activity-text { left: 0; }
+
+#runner .activity-text { left: 100vw; }
+#runner:hover .activity-text { left: 0; }
+
+@media (max-width: 460px) {
+    .sport-activities {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+        margin: auto;
+    }
+}
+
+@media screen {
+    #handball:active .activity-text { left: 0vw; }
+    #bike:active .activity-text { left: 0vw; }
+    #triatlon:active .activity-text { left: 0vw; }
+    #referee:active .activity-text { left: 0vw; }
+    #runner:active .activity-text { left: 0vw; }
+}
