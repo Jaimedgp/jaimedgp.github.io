@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        {% block title %}<title>JaimeDGP</title>{% endblock %}
+        <title>JaimeDGP</title>
 
         <meta charset="UTF-8">
         <meta name="author" content="Jaime Diez">
@@ -11,9 +11,8 @@
         <meta name="keywords" content="JavaScript, ES6, Jaime Diez, CSS3, Física, Fotografía, Deporte, Programacion.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        {% load static %}
-        <link rel="icon" href="{% static 'Photos/logo_Wht.png' %}">
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="icon" href="static/Photos/logo_Wht.png">
+        <link rel="stylesheet" href="static/css/styles.css">
     </head>
 
     <body>
@@ -21,13 +20,13 @@
             <div class="nav-container">
                 <nav>
                     <ul>
-                        <li><a href="{% static 'docs/CV_En.pdf' %}" title="My Resume"><div class="resume">Resume</div></a></li>
+                        <li><a href="static/docs/CV_En.pdf' %}" title="My Resume"><div class="resume">Resume</div></a></li>
                         <li> <a  href="https://es.linkedin.com/in/jaimedgp">
-                            <img style="height: 6rem;" src="{% static 'Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img> </a> </li>
+                            <img style="height: 6rem;" src="static/Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img> </a> </li>
                         <li> <a href = "mailto: jaimediezgp@gmail.com">
-                            <img style="height: 6rem;" src="{% static 'Photos/Home_page/email.png' %}" title="jaimediezgp@gmail.com"></img> </a> </li>
+                            <img style="height: 6rem;" src="static/Photos/Home_page/email.png' %}" title="jaimediezgp@gmail.com"></img> </a> </li>
                         <li> <a  href="https://github.com/Jaimedgp">
-                            <img style="height: 6rem;" src="{% static 'Photos/Home_page/github.png' %}" title="Github Profile"></img> </a> </li>
+                            <img style="height: 6rem;" src="static/Photos/Home_page/github.png' %}" title="Github Profile"></img> </a> </li>
                     </ul>
                 </nav>
             </div>
@@ -47,7 +46,7 @@
                 <div class="projects">
                     <div class="cards">
                         <div class="card">
-                            <img src="{% static 'Photos/Code/Muon.png' %}"></img>
+                            <img src="static/Photos/Code/Muon.png' %}"></img>
                             <h5><a href="https://github.com/Jaimedgp/Muon-Experiment-reader"> MULTI-DAQ </a></h5>
                             <p> In 2018 I developed a data acquisition program to measure muon half-life written
                                 in <b style="color: black;">C++</b> for the high energy department of the Institute
@@ -56,8 +55,7 @@
                         </div>
                         <!-- JUST A GRAPHICS PRINTER -->
                         <div class="card">
-                            {% load static %}
-                            <img src="{% static 'Photos/Code/JGP.png' %}"></img>
+                            <img src="static/Photos/Code/JGP.png' %}"></img>
                             <h5><a href="https://github.com/Jaimedgp/J_Graphics_P"> J Graphics P </a></h5>
                             <p> During the first two years of university I developed a <b style="color: black;">data
                                 analysis</b> program with the aim of learning <b style="color: black;">Python</b> in
@@ -66,8 +64,7 @@
                         </div>
                         <!-- MY OWN WEBPAGE -->
                         <div class="card">
-                            {% load static %}
-                            <img src="{% static 'Photos/Code/webpage.png' %}"></img>
+                            <img src="static/Photos/Code/webpage.png' %}"></img>
                             <h5><a href="https://github.com/Jaimedgp/jaimedgpWeb"> This Webpage </a></h5>
                             <p> I started developing this website as a personal project to learn about web
                                 development and the python <b style="color: black;">Django</b> framework,
@@ -145,8 +142,7 @@
                                 alone. Now, after 13 years as a player and 7 years as a
                                 referee, I have to enjoy handball as a spectator.</p>
                         </div>
-                        {% load static %}
-                        <img src="{% static 'Photos/sport/handball.png' %}"></img>
+                        <img src="static/Photos/sport/handball.png' %}"></img>
                     </div>
                     <div class="activity" id="referee">
                         <div class="activity-text">
@@ -161,8 +157,7 @@
                                 school tournaments, including the National escolar
                                 Championship.</p>
                         </div>
-                        {% load static %}
-                        <img src="{% static 'Photos/sport/referee.png' %}"></img>
+                        <img src="static/Photos/sport/referee.png' %}"></img>
                     </div>
                     <div class="activity" id="bike">
                         <div class="activity-text">
@@ -170,12 +165,11 @@
                                 but in recent years I have been able to enjoy it more as
                                 a sport, increasing the training sessions</p>
                         </div>
-                        {% load static %}
-                        <img src="{% static 'Photos/sport/bici.png' %}"></img>
+                        <img src="static/Photos/sport/bici.png' %}"></img>
                     </div>
                     <div class="strava-icon" id="strava">
                         <a href="https://www.strava.com/athletes/17781308">
-                            <img width="100%" src="{% static 'Photos/sport/strava.png' %}"></img>
+                            <img width="100%" src="static/Photos/sport/strava.png' %}"></img>
                         </a>
                     </div>
                     <div class="activity" id="runner">
@@ -186,8 +180,7 @@
                                 study. This has led me to participate in several popular
                                 races, completing a half marathon.</p>
                         </div>
-                        {% load static %}
-                        <img src="{% static 'Photos/sport/mediamaraton.png' %}"></img>
+                        <img src="static/Photos/sport/mediamaraton.png' %}"></img>
                     </div>
                     <div class="activity"  id="triatlon">
                         <div class="activity-text">
@@ -195,8 +188,7 @@
                                 swimming to be able to cover the three modalities that
                                 include triathlon.</p>
                         </div>
-                        {% load static %}
-                        <img src="{% static 'Photos/sport/triatlon.png' %}"></img>
+                        <img src="static/Photos/sport/triatlon.png' %}"></img>
                     </div>
                 </div>
             </section>
@@ -214,15 +206,14 @@
                     </div>
 
                     <div class="gallery">
-                        {% load static %}
                         <div class="photo" id="photo1">
-                            <img src="{% static 'Photos/Gallery/Edited_5848.JPG' %}"></img>
+                            <img src="static/Photos/Gallery/Edited_5848.JPG' %}"></img>
                         </div>
                         <div class="photo" id="photo2">
-                            <img src="{% static 'Photos/Gallery/IMG_6014.JPG' %}"></img>
+                            <img src="static/Photos/Gallery/IMG_6014.JPG' %}"></img>
                         </div>
                         <div class="photo" id="photo3">
-                            <img src="{% static 'Photos/Gallery/IMG_5205.JPG' %}"></img>
+                            <img src="static/Photos/Gallery/IMG_5205.JPG' %}"></img>
                         </div>
                     </div>
                 </div>
@@ -232,14 +223,14 @@
             <div class="footer">
                 <nav>
                     <div class="footer-content">
-                        <img style="height: 6rem;" src="{% static 'Photos/Home_page/linkedin.png' %}"></img>
+                        <img style="height: 6rem;" src="staticPhotos/Home_page/linkedin.png' %}"></img>
                         <ul>
                             <li> <a  href="https://es.linkedin.com/in/jaimedgp">
-                                <img style="height: 6rem;" src="{% static 'Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img> </a> </li>
+                                <img style="height: 6rem;" src="staticPhotos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img> </a> </li>
                             <li> <a href = "mailto: jaimediezgp@gmail.com">
-                                <img style="height: 6rem;" src="{% static 'Photos/Home_page/email.png' %}" title="jaimediezgp@gmail.com"></img> </a> </li>
+                                <img style="height: 6rem;" src="staticPhotos/Home_page/email.png' %}" title="jaimediezgp@gmail.com"></img> </a> </li>
                             <li> <a  href="https://github.com/Jaimedgp">
-                                <img style="height: 6rem;" src="{% static 'Photos/Home_page/github.png' %}" title="Github Profile"></img> </a> </li>
+                                <img style="height: 6rem;" src="staticPhotos/Home_page/github.png' %}" title="Github Profile"></img> </a> </li>
                         </ul>
                     </div>
                 </nav>
@@ -248,7 +239,6 @@
         </main>
     </body>
 
-    {% load static %}
-    <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
+    <script type="text/javascript" src="static/javascript/main.js"></script>
 </html>
 
