@@ -11,234 +11,100 @@
         <meta name="keywords" content="JavaScript, ES6, Jaime Diez, CSS3, Física, Fotografía, Deporte, Programacion.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <link rel="icon" href="static/Photos/logo_Wht.png">
+        <!--<link rel="icon" href="static/Photos/logo_Wht.png">-->
         <link rel="stylesheet" href="static/css/styles.css">
     </head>
 
     <body>
         <main>
-            <div class="nav-container">
-                <nav>
-                    <ul>
-                        <li><a href="static/docs/CV_En.pdf" title="My Resume"><div class="resume">Resume</div></a></li>
-                        <li> <a  href="https://es.linkedin.com/in/jaimedgp">
-                            <img style="height: 6rem;" src="static/Photos/Home_page/linkedin.png"title="Linkedin Profile"></img> </a> </li>
-                        <li> <a href = "mailto: jaimediezgp@gmail.com">
-                            <img style="height: 6rem;" src="static/Photos/Home_page/email.png" title="jaimediezgp@gmail.com"></img> </a> </li>
-                        <li> <a  href="https://github.com/Jaimedgp">
-                            <img style="height: 6rem;" src="static/Photos/Home_page/github.png" title="Github Profile"></img> </a> </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <!-- HOME PAGE -->
             <section id="home">
-                <div class="home-title" id="title">
-                    <h1> JaimeDGP </h1>
-                    <h4> I'm <b style="color: white;">Physicist</b> and MSc <b style="color: white">Data Science</b> student,
-                         <b style="color: white">Sport</b> lover and newbie in <b style="color: white">Photography</b>
-                    </h4>
+                <div class="script">
+                    <table id="main">
+                        <tr>
+                            <td> 1</td>
+                            <td> Me <b class="oper">=</b> <b class="func">Jaimedgp</b>(</td>
+                            <td><b class="param">physicist</b><b class="pnt">,</b></td>
+                        </tr>
+                        <tr>
+                            <td> 2</td>
+                            <td></td>
+                            <td><b class="param">data_Scientist</b><b class="pnt">,</b></td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td></td>
+                            <td><b class="param">researcher</b><b class="pnt">,</b></td>
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td></td>
+                            <td><b class="param">sport_l<b class="hghlhgt">o</b>ver</b>)</td>
+                        </tr>
+                    </table>
+
+                    <table id="contact">
+                        <tr>
+                            <td> 5</td>
+                            <td> Me.<b class="attr">name</b> <b class="oper">=</b> <b class="str">"Jaime"</b></td>
+                        </tr>
+                        <tr>
+                            <td> 6</td>
+                            <td> Me.<b class="attr">lastname</b> <b class="oper">=</b> <b class="str">"Diez Gonzalez-Pardo"</b></td>
+                        </tr>
+                        <tr>
+                            <td> 7</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> 8</td>
+                            <td class="comment"># Contact information</td>
+                        </tr>
+                        <tr>
+                            <td> 9</td>
+                            <td> Me.<b class="attr">email</b> <b class="oper">=</b> <b class="str">"jaime.diez.gp@gmail.com"</b></td>
+                        </tr>
+                        <tr>
+                            <td> 10</td>
+                            <td> Me.<b class="attr">mobile</b> <b class="oper">= +</b> <b class="num">34 649 004 985</b></td>
+                        </tr>
+                        <tr>
+                            <td> 11</td>
+                            <td> Me.<b class="attr">city</b> <b class="oper">=</b> [<b class="str">"Santander"</b>,
+                                                                                    <b class="str">"Cantabria"</b>,
+                                                                                    <b class="str">"Spain"</b>]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 12</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> 13</td>
+                            <td class="comment"># Social media</td>
+                        </tr>
+                        <tr>
+                            <td> 14</td>
+                            <td> Me.<b class="attr">github</b> <b class="oper">=</b> <b class="str">"Jaimedgp"</b></td>
+                        </tr>
+                        <tr>
+                            <td> 15</td>
+                            <td> Me.<b class="attr">linkedin</b> <b class="oper">=</b> <b class="str">"Jaime Diez Gonzalez-Pardo"</b></td>
+                        </tr>
+                        <tr>
+                            <td> 16</td>
+                            <td> Me.<b class="attr">orcid</b> <b class="oper">=</b>
+                                <b class="num">0000</b><b class="oper">-</b><b class="num">0001</b><b class="oper">-</b><b class="num">7268</b><b class="oper">-</b><b class="num">9933</b></td>
+                        </tr>
+                        <tr>
+                            <td> 17</td>
+                            <td> Me.<b class="attr">strava</b> <b class="oper">=</b> <b class="str">"Jaime Diez"</b></td>
+                        </tr>
+                    </table>
                 </div>
             </section>
-
-            <!-- CODE INFORMATION -->
-            <section id="code">
-                <div class="projects">
-                    <div class="cards">
-                        <div class="card">
-                            <img src="static/Photos/Code/Muon.png"></img>
-                            <h5><a href="https://github.com/Jaimedgp/Muon-Experiment-reader"> MULTI-DAQ </a></h5>
-                            <p> In 2018 I developed a data acquisition program to measure muon half-life written
-                                in <b style="color: black;">C++</b> for the high energy department of the Institute
-                                of Physics of Cantabria <b style="color: black;">(IFCA)</b> with the aim of being
-                                used in an experiment of the degree in Physics of the University of Cantabria </p>
-                        </div>
-                        <!-- JUST A GRAPHICS PRINTER -->
-                        <div class="card">
-                            <img src="static/Photos/Code/JGP.png"></img>
-                            <h5><a href="https://github.com/Jaimedgp/J_Graphics_P"> J Graphics P </a></h5>
-                            <p> During the first two years of university I developed a <b style="color: black;">data
-                                analysis</b> program with the aim of learning <b style="color: black;">Python</b> in
-                                a self-taught way, which would also help me in the laboratory practices of the degree.
-                                Thanks to this I was able to learn several Python modules such as</p>
-                        </div>
-                        <!-- MY OWN WEBPAGE -->
-                        <div class="card">
-                            <img src="static/Photos/Code/webpage.png"></img>
-                            <h5><a href="https://github.com/Jaimedgp/jaimedgpWeb"> This Webpage </a></h5>
-                            <p> I started developing this website as a personal project to learn about web
-                                development and the python <b style="color: black;">Django</b> framework,
-                                as well as increasing my knowledge of <b style="color: black;">javascript</b>,
-                                <b style="color: black;">HTML</b> and
-                                <b style="color: black;">CSS</b></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ACADEMY INFORMATION -->
-            <section id="academy">
-                <div class="curriculum-vitae">
-                    <!-- MSc Data Science -->
-                        <div class="cv-title" id="dataScience">
-                            <h4>MSc in Data Science</h4>
-                        </div>
-                        <div class="cv-description" id="dataScience">
-                            <p> Master in Data Science from the University of Cantabria in
-                                the specialty in data science intelligence with subjects of
-                                specializing in <b>Physics</b> and
-                                <b>Internet of Things (IoT)</b></p>
-                        </div>
-
-                    <!-- Physics Degree -->
-                        <div class="cv-title" id="physics">
-                            <h4>Physics Degree</h4>
-                        </div>
-                        <div class="cv-description" id="physics">
-                            <p> In 2019 I graduated in physics from the University of Cantabria
-                                with the <b>mention of fundamental physics</b>.
-                                During the four years of the degree, in addition to my studies in
-                                physics, I took the opportunity to increase my knowledge in computer
-                                science through <b>additional training</b>
-                                in Computer Engineering‘s subject <b>Databases</b>.</p>
-                            <p> My final degree thesis <b>"Simulation of optical
-                                frequency combs generated by semiconductor lasers"</b> allowed me to
-                                participate as co-author in a scientific article published in the
-                                <a style="color: gray;" href="https://doi.org/10.1109/JPHOT.2020.3009450">IEEE Photonics</a>
-                                Journal and in a conference of the
-                                <a style="color: gray;" href="https://doi.org/10.1117/12.2554563">SPIE Photonics Europe</a></p>
-                        </div>
-
-                    <!-- International Baccalaureate -->
-                        <div class="cv-title" id="IB">
-                            <h4>International Baccalaureate</h4>
-                        </div>
-                        <div class="cv-description" id="IB">
-                            <p> I did the international baccalaureate diploma program
-                                <b>simultaneously</b> with the
-                                Spanish national baccalaureate.</p>
-                            <p> During these studies and within the DP core Creativity, Activity and
-                                Services (CAS), I participated in activities such as
-                                <b>philosophical essay</b> contests,
-                                <b>Mathematical Olympics</b>,
-                                <b>scientific outreach</b> activities with the
-                                University of Cantabria and <b>volunteering</b>
-                                in the Cáritas organization, preparing packages of food for families
-                                in need, continuing this last activity in subsequent years.</p>
-                        </div>
-                </div>
-            </section>
-
-            <!-- SPORTS INFORMATION -->
-            <section id="sport">
-                <div class="sport-activities">
-                    <div class="activity" id="handball">
-                        <div class="activity-text">
-                            <p> I started playing handball when I was 5 years old and I was
-                                immediately hooked, playing almost any position, but the
-                                playmaker being my favorite position. I got to play several
-                                finals with my team until I had to leave it when I entered
-                                university to focus on my studies and continue as a referee
-                                alone. Now, after 13 years as a player and 7 years as a
-                                referee, I have to enjoy handball as a spectator.</p>
-                        </div>
-                        <img src="static/Photos/sport/handball.png"></img>
-                    </div>
-                    <div class="activity" id="referee">
-                        <div class="activity-text">
-                            <p> In 2012, encouraged by my brother, I decided to discover a
-                                new way to enjoy handball by becoming a
-                                <b>referee</b> for the Cantabria
-                                committee.</p>
-                            <p> The year after I stopped competing as a player, I was
-                                promoted as a referee to the highest regional category and
-                                in 2018 I was called by the <b>
-                                National Committee</b> to participate in several national
-                                school tournaments, including the National escolar
-                                Championship.</p>
-                        </div>
-                        <img src="static/Photos/sport/referee.png"></img>
-                    </div>
-                    <div class="activity" id="bike">
-                        <div class="activity-text">
-                            <p> I have always liked the bicycle not only as a spectator,
-                                but in recent years I have been able to enjoy it more as
-                                a sport, increasing the training sessions</p>
-                        </div>
-                        <img src="static/Photos/sport/bici.png"></img>
-                    </div>
-                    <div class="strava-icon" id="strava">
-                        <a href="https://www.strava.com/athletes/17781308">
-                            <img width="100%" src="static/Photos/sport/strava.png"></img>
-                        </a>
-                    </div>
-                    <div class="activity" id="runner">
-                        <div class="activity-text">
-                            <p> When I stopped practicing handball, I had to find a
-                                substitute to keep in shape, the race being a good exercise
-                                that allows me to be active and combine it with work and
-                                study. This has led me to participate in several popular
-                                races, completing a half marathon.</p>
-                        </div>
-                        <img src="static/Photos/sport/mediamaraton.png"></img>
-                    </div>
-                    <div class="activity"  id="triatlon">
-                        <div class="activity-text">
-                            <p> Being a bicycle fan and running regularly, I only needed
-                                swimming to be able to cover the three modalities that
-                                include triathlon.</p>
-                        </div>
-                        <img src="static/Photos/sport/triatlon.png"></img>
-                    </div>
-                </div>
-            </section>
-
-            <!-- PHOTOGRAPHY INFORMATION -->
-            <section id="photo">
-                    <div class="photo-header">
-                        <div class="photo-title">
-                            <h2>Photo Gallery</h2>
-                        </div>
-                        <div class="photo-description">
-                            <h4> As part of my hobbies, photography must be added,
-                                which I try to learn in a self-taught way</h4>
-                        </div>
-                    </div>
-
-                    <div class="gallery">
-                        <div class="photo" id="photo1">
-                            <img src="static/Photos/Gallery/Edited_5848.JPG"></img>
-                        </div>
-                        <div class="photo" id="photo2">
-                            <img src="static/Photos/Gallery/IMG_6014.JPG"></img>
-                        </div>
-                        <div class="photo" id="photo3">
-                            <img src="static/Photos/Gallery/IMG_5205.JPG"></img>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--
-            <div class="footer">
-                <nav>
-                    <div class="footer-content">
-                        <img style="height: 6rem;" src="staticPhotos/Home_page/linkedin.png"></img>
-                        <ul>
-                            <li> <a  href="https://es.linkedin.com/in/jaimedgp">
-                                <img style="height: 6rem;" src="staticPhotos/Home_page/linkedin.png"title="Linkedin Profile"></img> </a> </li>
-                            <li> <a href = "mailto: jaimediezgp@gmail.com">
-                                <img style="height: 6rem;" src="staticPhotos/Home_page/email.png" title="jaimediezgp@gmail.com"></img> </a> </li>
-                            <li> <a  href="https://github.com/Jaimedgp">
-                                <img style="height: 6rem;" src="staticPhotos/Home_page/github.png" title="Github Profile"></img> </a> </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            -->
         </main>
     </body>
 
-    <script type="text/javascript" src="static/javascript/main.js"></script>
+    <!--<script type="text/javascript" src="static/javascript/main.js"></script>-->
 </html>
 
