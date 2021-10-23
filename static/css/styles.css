@@ -70,11 +70,71 @@ tr > :first-child {
 .oper {color: #FF5F5F; }
 .func {color: #87AF87; }
 .param {color: #FF8700; }
-.hghlhgt {background: #FF8700; color: #262626;}
 .attr {color: #87AF87;}
 .comment {color: #808080;}
 .str {color: #AFAF00;}
 .num {color: #D787AF;}
+.hghlhgt {
+    -webkit-animation: 1.5s blink step-end infinite;
+    -moz-animation: 1.5s blink step-end infinite;
+    -ms-animation: 1.5s blink step-end infinite;
+    -o-animation: 1.5s blink step-end infinite;
+    animation: 1.5s blink step-end infinite;
+}
+@keyframes "blink"{
+    from, to {
+        color: #262626;
+        background: #FF8700;
+    }
+    50% {
+        background: #262626;
+        color: #FF8700;
+    }
+}
+@-webkit-keyframes "blink" {
+    from, to {
+        color: #262626;
+        background: #FF8700;
+    }
+    50% {
+        background: #262626;
+        background: transparent;
+        color: #FF8700;
+    }
+}
+
+@-moz-keyframes "blink" {
+    from, to {
+        color: #262626;
+        background: #FF8700;
+    }
+    50% {
+        background: #262626;
+        color: #FF8700;
+    }
+}
+
+@-ms-keyframes "blink" {
+    from, to {
+        color: #262626;
+        background: #FF8700;
+    }
+    50% {
+        background: #262626;
+        color: #FF8700;
+    }
+}
+
+@-o-keyframes "blink" {
+    from, to {
+        color: #262626;
+        background: #FF8700;
+    }
+    50% {
+        background: #262626;
+        color: #FF8700;
+    }
+}
 
 html {
     overflow-x: hidden;
