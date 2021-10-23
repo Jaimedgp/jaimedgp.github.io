@@ -67,6 +67,7 @@ tr > :first-child {
 }
 
 
+.txt { color: #FFD7AF; }
 .oper {color: #FF5F5F; }
 .func {color: #87AF87; }
 .param {color: #FF8700; }
@@ -165,9 +166,7 @@ h3 { font-size: 8rem; }
 h4 { font-size: 5rem; }
 h5 { font-size: 3rem; }
 p  { font-size: 2rem; }
-a  {
-    color: black;
-    text-decoration: none; }
+a  { text-decoration: none; }
 img {
     max-width: 100%;
     max-height: 100%;
