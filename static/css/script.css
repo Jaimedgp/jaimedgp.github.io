@@ -1,25 +1,15 @@
 div.nav-container {
     opacity: 1;
-
     position: fixed;
     z-index: 1;
-
-    height: 5vh;
-    width: 100vw;
 }
 
-nav {
-    width: 80%;
-    height: 100%;
-    margin: auto;
-}
+nav { margin: auto; }
 
 nav > b {
-    height: 100%;
     margin: auto;
     padding: auto;
 
-    font-size: 40px;
     float: left;
 }
 
@@ -31,64 +21,23 @@ nav > ul {
 }
 
 nav ul > li { padding: 1rem; }
-nav ul li > a { font-size: 3rem; }
 
-table.code {
-  border-collapse: collapse;
-  width: max-content;
-}
+table.code { border-collapse: collapse; }
 
 table.code > td { padding: 0px; }
 
-table.code tr > :first-child {
-    padding-right: 20px;
-    text-align: right;
-}
-
+table.code tr > :first-child { text-align: right; }
 
 div#main {
-    grid-column: 2;
-    grid-row: 3;
-
     display: grid;
-
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr max-content 1fr 1fr;
-
     position: relative;
 }
 
-table#main {
-    grid-column: 2;
-    grid-row: 1;
-
-    font-size: 80px;
-}
-
-div#contact {
-    grid-column: 2;
-    grid-row: 3;
-
-    font-size: 20px;
-}
 
 div#description {
-    grid-column: 2;
-    grid-row: 3;
-
     display: grid;
 
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr max-content;
-
     position: relative;
-}
-
-table#description {
-    grid-column: 2;
-    grid-row: 1;
-
-    font-size: 25px;
 }
 
 .hghlhgt {
@@ -101,41 +50,13 @@ table#description {
 
 div.footer {
     position: relative;
-
-    width: 100%;
-    height: 25vh;
-
     display: grid;
-
-    grid-template-rows: 1fr max-content 2fr;
-    grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
 }
 
-div#me {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-div#social {
-    grid-column: 3;
-    grid-row: 2;
-}
 
 table.footer-content {
-    padding: 20px;
-    width: 100%;
-    font-size: 20px;
-
     border-collapse: collapse;
     text-align: left;
 }
-table.footer-content th {
-    padding-bottom: 20px;
 
-    font-weight: bold;
-    font-size: 30px;
-}
-
-table.footer-content td { padding-bottom: 10px; }
-
-img.social { height: 25px; }
+table.footer-content th { font-weight: bold; }

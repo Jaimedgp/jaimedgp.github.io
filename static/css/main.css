@@ -1,9 +1,11 @@
 @import "script.css";
 @import "colorschemes.css";
+@import "size_layout.css";
 
 html {
     overflow-x: hidden;
-    font-size: 62.5%;
+
+    height: 100%;
 }
 
 *{
@@ -16,6 +18,10 @@ body {
     overflow-x: hidden;
     font-family: "Latin Modern Mono Prop Light";
 
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -28,136 +34,3 @@ section {
 }
 
 a { text-decoration: none; }
-j
-@media (max-width: 560px) {
-    table#main { font-size: 19px; }
-
-    table#contact { font-size: 10px; }
-    table#description {
-        font-size: 8px;
-        grid-column: 1;
-    }
-    section {
-        grid-template-columns: 5% 1fr 5%;
-        grid-template-rows: 5vh 1vh max-content 5vh;
-    }
-    div.footer { grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%; }
-    table.footer-content { font-size: 10px; }
-    table.footer-content th { font-size: 12px; }
-    img.social { height: 6px; }
-    div#me { grid-column: 2/4; }
-    div#social { grid-column: 4/6; }
-
-    div.nav-container {
-        opacity: 1;
-
-        height: 100vh;
-        width: 0vw; /* Change => 65 */
-    }
-
-    nav {
-        display: grid;
-
-        grid-template-rows: 25% 2fr 1fr 6fr 25%;
-        grid-template-columns: 15% 70% 15%;
-
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
-    nav > b {
-        grid-column: 2;
-        grid-row: 2;
-
-        font-size: 0px; /* Change => 40 */
-    }
-
-    .nav-ul > ul {
-        grid-column: 2;
-        grid-row: 4;
-
-        display: block;
-        list-style: none;
-
-        float: left;
-    }
-
-    /* change */
-    nav ul li > a { font-size: 0rem; }
-}
-
-/* Media Query for Mobile Devices */
-@media (min-width: 561px) and
-       (max-width: 579px) {
-    table#main { font-size: 30px; }
-
-    table#contact { font-size: 10px; }
-    table#description {
-        font-size: 8px;
-        grid-column: 1;
-    }
-    section {
-        grid-template-columns: 5% 1fr 5%;
-        grid-template-rows: 5vh 1vh max-content 5vh;
-    }
-    div.footer { grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%; }
-    table.footer-content { font-size: 10px; }
-    table.footer-content th { font-size: 12px; }
-    img.social { height: 6px; }
-    div#me { grid-column: 2/4; }
-    div#social { grid-column: 4/6; }
-
-    div.nav-container {
-        opacity: 1;
-
-        height: 100vh;
-        width: 0vw; /* Change => 65 */
-    }
-
-    nav {
-        display: grid;
-
-        grid-template-rows: 25% 2fr 1fr 6fr 25%;
-        grid-template-columns: 15% 70% 15%;
-
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
-    nav > b {
-        grid-column: 2;
-        grid-row: 2;
-
-        font-size: 0px; /* Change => 40 */
-    }
-
-    .nav-ul > ul {
-        grid-column: 2;
-        grid-row: 4;
-
-        display: block;
-        list-style: none;
-
-        float: left;
-    }
-
-    /* change */
-    nav ul li > a { font-size: 0rem; }
-}
-
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 581px) and (max-width: 767px) { table#main { font-size: 30px; } }
-
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px){ table#main { font-size: 40px; } }
-
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and
-       (max-width: 1280px) { table.footer-content { font-size: 15px; } }
-
-/* Media Query for Large screens */
-@media (min-width: 1281px) { table#main { font-size: 60px; } }
-
-
