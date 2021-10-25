@@ -11,18 +11,31 @@
         <meta name="keywords" content="JavaScript, ES6, Jaime Diez, CSS3, Fisica, Fotografia, Deporte, Programacion.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <!--<link rel="icon" href="static/Photos/logo_Wht.png">-->
+        <link rel="icon" href="static/icons/white.png">
         <link rel="stylesheet" href="static/css/styles.css">
     </head>
 
-    <body>
+    <body class="dark-theme">
         <main>
-            <section id="home">
-                <div class="script">
-                    <table id="main">
+            <div class="nav-container">
+                <nav>
+                    <b><a href="">Jaimedgp</a></b>
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#description">About</a></li>
+                        <!--<li><a href="#">Work</a></li>-->
+                        <!--<li<li><a href="#">Sport</a></li>-->
+                        <li><a href="static/doc/resume-en.pdf" title="My Resume">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section>
+                <div id="main">
+                    <table class="code" id="main">
                         <tr>
                             <td> 1</td>
-                            <td> Me <b class="oper">=</b> <b class="func">Jaimedgp</b>(</td>
+                            <td> me <b class="oper">=</b> <b class="func">JaimeDGP</b>(</td>
                             <td><b class="param">physicist</b><b class="pnt">,</b></td>
                         </tr>
                         <tr>
@@ -41,15 +54,19 @@
                             <td><b class="param">sport_love<b class="hghlhgt">r</b></b>)</td>
                         </tr>
                     </table>
+                </div>
+            </section>
 
-                    <table id="contact">
+            <section id="contact">
+                <div id="contact">
+                    <table class="code" id="contact">
                         <tr>
                             <td> 5</td>
-                            <td> Me.<b class="attr">name</b> <b class="oper">=</b> <b class="str">"Jaime"</b></td>
+                            <td> me.<b class="func">name</b> <b class="oper">=</b> <b class="str">"Jaime"</b></td>
                         </tr>
                         <tr>
                             <td> 6</td>
-                            <td> Me.<b class="attr">lastname</b> <b class="oper">=</b> <b class="str">"Díez González-Pardo"</b></td>
+                            <td> me.<b class="func">lastname</b> <b class="oper">=</b> <b class="str">"Díez González-Pardo"</b></td>
                         </tr>
                         <tr>
                             <td> 7</td>
@@ -61,57 +78,173 @@
                         </tr>
                         <tr>
                             <td> 9</td>
-                            <td> Me.<b class="attr">email</b> <b class="oper">=</b> <b class="str">"jaime.diez.gp@gmail.com"</b></td>
+                            <td> me.<b class="func">email</b> <b class="oper">=</b> <b class="str">"jaime.diez.gp@gmail.com"</b></td>
                         </tr>
                         <tr>
                             <td> 10</td>
-                            <td> Me.<b class="attr">mobile</b> <b class="oper">= +</b> <b class="num">34 649 004 985</b></td>
-                        </tr>
-                        <tr>
-                            <td> 11</td>
-                            <td> Me.<b class="attr">city</b> <b class="oper">=</b> [<b class="str">"Santander"</b>,
+                            <td> me.<b class="func">city</b> <b class="oper">=</b> [<b class="str">"Santander"</b>,
                                                                                     <b class="str">"Cantabria"</b>,
                                                                                     <b class="str">"Spain"</b>]
                             </td>
                         </tr>
                         <tr>
-                            <td> 12</td>
+                            <td> 11</td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td> 13</td>
+                            <td> 12</td>
                             <td class="comment"># Social media</td>
                         </tr>
                         <tr>
-                            <td> 14</td>
+                            <td> 13</td>
                             <td>
                                 <a class="txt" href="https://github.com/Jaimedgp">
-                                    Me.<b class="attr">github</b> <b class="oper">=</b> <b class="str">"Jaimedgp"</b>
+                                    me.<b class="func">github</b> <b class="oper">=</b> <b class="str">"Jaimedgp"</b>
                                 </a>
                             </td>
                         </tr>
                         <tr>
-                            <td> 15</td>
+                            <td> 14</td>
                             <td><a class="txt" href="https://www.linkedin.com/in/jaimedgp/">
-                                Me.<b class="attr">linkedin</b> <b class="oper">=</b> <b class="str">"Jaime Díez González-Pardo"</b>
+                                me.<b class="func">linkedin</b> <b class="oper">=</b> <b class="str">"Jaime Díez González-Pardo"</b>
                             </a></td>
                         </tr>
                         <tr>
-                            <td> 16</td>
+                            <td> 15</td>
                             <td><a class="txt" href="https://orcid.org/0000-0001-7268-9933">
-                                Me.<b class="attr">orcid</b> <b class="oper">=</b>
+                                me.<b class="func">orcid</b> <b class="oper">=</b>
                                 <b class="num">0000</b><b class="oper">-</b><b class="num">0001</b><b class="oper">-</b><b class="num">7268</b><b class="oper">-</b><b class="num">9933</b>
                             </a></td>
                         </tr>
                         <tr>
-                            <td> 17</td>
+                            <td> 16</td>
                             <td><a class="txt" href="https://www.strava.com/athletes/17781308">
-                                Me.<b class="attr">strava</b> <b class="oper">=</b> <b class="str">"Jaime Diez"</b>
+                                me.<b class="func">strava</b> <b class="oper">=</b> <b class="str">"Jaime Diez"</b>
                             </a></td>
                         </tr>
                     </table>
                 </div>
             </section>
+
+            <section id="description">
+                <div id="description">
+                    <table class="code" id="description">
+                        <tr>
+                            <td>17</td>
+                            <td> me.<b class="func">about</b> <b class="oper">=</b>
+                                <b class="str">"""</b></td>
+                            <td><b class="str">My interest in programming has led me to learn several</b></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td></td>
+                            <td><b class="str">programming languages in a self-taught way from personal projects</b></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td></td>
+                            <td><b class="str">that I share through my GitHub since 2015. These skills, along</b></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td></td>
+                            <td><b class="str">with the knowledge and skills acquired in my physics studies have</b></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td></td>
+                            <td><b class="str">led me to delve into data science. So far I have been able to put</b></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td></td>
+                            <td><b class="str">theses kills into practice in the different research projects I</b></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td></td>
+                            <td><b class="str">have been involved in and in which I have always played a leading</b></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td></td>
+                            <td><b class="str">role in the development of computational tools for the research</b></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td></td>
+                            <td><b class="str">such as simulations, predictive models or data acquisition </b></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td></td>
+                            <td><b class="str">programs and which have led in some cases to the publication of </b></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td></td>
+                            <td><b class="str">scientific articles in journals and conferences."""</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <div class="footer">
+                <div id="me">
+                    <table class="footer-content">
+                        <tr>
+                            <th>Jaimedgp</th>
+                        </tr>
+                        <tr>
+                            <td>Jaime Díez González-Pardo</td>
+                        </tr>
+                        <tr>
+                            <td>jaime.diez.gp@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Santander, Cantabria, Spain</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="social">
+                    <table class="footer-content">
+                        <tr>
+                            <td>
+                                <a href="https://github.com/Jaimedgp">
+                                    <img class="social" src="static/icons/github.png" alt="Jaime Diez"></img>
+                                    Jaimedgp
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://www.linkedin.com/in/jaimedgp/">
+                                    <img class="social" src="static/icons/linkedin.png" alt="Jaime Diez"></img>
+                                    Jaime Diez Gonzalez-Pardo
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="https://orcid.org/0000-0001-7268-9933">
+                                    <img class="social" src="static/icons/orcid.png" alt="Jaime Diez"></img>
+                                    0000-0001-7268-9933
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://strava.com/athletes/17781308">
+                                    <img class="social" src="static/icons/strava-bw.png" alt="Jaime Diez"></img>
+                                    Jaime Diez
+                                </a>
+                            </td>
+                        </tr>
+                        </table>
+                </div>
+            </div>
         </main>
     </body>
 
