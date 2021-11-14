@@ -31,24 +31,7 @@ body.light-theme {
     --nav-fg-color:     #E4E4E4;
 }
 
-body {
-    background-color: var(--bg-color);
-    color:            var(--text-color);
-}
-
-a                   { color: var(--text-color); }
-
 table.code tr > :first-child   { color: var(--external-color); }
-
-div.nav-container{
-    background-color: var(--nav-bg-color);
-    color: var(--nav-fg-color);
-}
-
-div.footer {
-    background-color: var(--nav-bg-color);
-    color:            var(--nav-fg-color);
-}
 
 table.footer-content td > a { color: var(--nav-fg-color); }
 
@@ -62,16 +45,29 @@ body.light-theme img.social {
             hue-rotate(119deg) brightness(114%) contrast(79%);
 }
 
+/**
 nav ul li > a       { color: var(--nav-fg-color); }
 nav b > a           { color: var(--nav-fg-color); }
+*/
+nav                 { color: var(--nav-fg-color); }
 
-.txt        { color: var(--text-color); }
-.oper       { color: var(--operator-color); }
-.func       { color: var(--function-color); }
-.param      { color: var(--parameter-color); }
-.comment    { color: var(--comment-color); }
-.str        { color: var(--string-color); }
-.num        { color: var(--numbers-color); }
+span.txt        { color: var(--text-color); }
+span.oper       { color: var(--operator-color); }
+span.func       { color: var(--function-color); }
+span.param      { color: var(--parameter-color); }
+span.comment    { color: var(--comment-color); }
+span.str        { color: var(--string-color); }
+span.num        { color: var(--numbers-color); }
+
+span.hghlhgt {
+    -webkit-animation: 1.5s blink step-end infinite;
+    -moz-animation: 1.5s blink step-end infinite;
+    -ms-animation: 1.5s blink step-end infinite;
+    -o-animation: 1.5s blink step-end infinite;
+    animation: 1.5s blink step-end infinite;
+}
+
+div.card-project { background: var(--nav-bg-color)}
 
 @keyframes "blink"{
     from, to {
