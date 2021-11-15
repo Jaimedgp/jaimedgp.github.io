@@ -13,6 +13,11 @@ for (var i=0; i<code.length; i++) {
     for (var r=1; r<line.length-1; r++) {
         var tr = table.insertRow();
 
+        if (line[r].split('<a ').length > 1) {
+            console.log(line[r].split('<a '))
+            tr.classList.add('row-link');
+        }
+
         var td = tr.insertCell();
         td.appendChild(document.createTextNode(j));
         j += 1
