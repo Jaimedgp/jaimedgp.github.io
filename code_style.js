@@ -14,7 +14,6 @@ for (var i=0; i<code.length; i++) {
         var tr = table.insertRow();
 
         if (line[r].split('<a ').length > 1) {
-            console.log(line[r].split('<a '))
             tr.classList.add('row-link');
         }
 
@@ -32,3 +31,12 @@ for (var i=0; i<code.length; i++) {
     code[i].innerHTML = '';
     code[i].appendChild(table);
 }
+
+/**
+window.addEventListener('resize', function() {
+    var el = document.getElementById('about');
+    var style = window.getComputedStyle(el, null).getPropertyValue('font-size');
+    console.log(style);
+    console.log(window.innerHeight);
+});
+*/
