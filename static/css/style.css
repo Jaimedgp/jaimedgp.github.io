@@ -210,4 +210,6 @@ table.code tr > :first-child {
     html { font-size: 1.8vw; }
 
     .title { font-size: 2.5rem; }
+
+    .container-nav { flex-direction: column; }
 }
