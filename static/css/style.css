@@ -108,8 +108,8 @@ tr.row-link:hover { background: var(--nav-bg-color); }
 
 .git { align-items: stretch; }
 
-#contact { padding: 3.5em; }
-#about { padding: 3.5em; }
+#contact { padding: 3.5em 0; }
+#about { padding: 3.5em 0; }
 
 table.code { margin: 0 auto; }
 table.code tr > :first-child {
@@ -209,11 +209,5 @@ table.code tr > :first-child {
 
     html { font-size: 1.8vw; }
 
-    .title {
-        font-size: 2.5rem;
-        padding: 1.5em 1em;
-    }
-
-    #contact { padding: 0 3.5em; }
-    #about { padding: 0 3.5em; }
+    .title { font-size: 2.5rem; }
 }
