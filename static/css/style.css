@@ -15,7 +15,7 @@ html {
 
 body {
     overflow-x: hidden;
-    font-family: "Latin Modern Mono Prop Light";
+    font-family: monospace;
 
     display: flex;
     flex-direction: column;
