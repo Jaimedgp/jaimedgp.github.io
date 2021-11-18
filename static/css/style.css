@@ -213,6 +213,10 @@ table.code tr > :first-child {
     .title { font-size: 2.5rem; }
 
     .container-nav { flex-direction: column; }
+
+    #contact { padding-top: 4.5em; }
+    #about { padding-top: 4.5em; }
+
 }
 
 @media screen and (max-width: 1310px) {
