@@ -2,6 +2,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
     font-size: 0.9vw;
     height: 100%;
@@ -212,4 +213,16 @@ table.code tr > :first-child {
     .title { font-size: 2.5rem; }
 
     .container-nav { flex-direction: column; }
+}
+
+@media screen and (max-width: 1310px) {
+
+    .nav > ul { font-size: 1.5rem; }
+    .card-project {
+        max-width: 100%;
+        font-size:1.75rem;
+    }
+    .card-sport {
+        max-width: 100%;
+        font-size:1.75rem;
 }
