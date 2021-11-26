@@ -27,8 +27,8 @@ body.light-theme {
     --string-color:     #5FAF00;
     --numbers-color:    #AF8700;
 
-    --nav-bg-color:     #949494;
-    --nav-fg-color:     #E4E4E4;
+    --nav-bg-color:     #DADADA;
+    --nav-fg-color:     #626262;
 }
 
 table.code tr > :first-child   { color: var(--external-color); }

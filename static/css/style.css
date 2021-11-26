@@ -37,9 +37,24 @@ header {
     text-align: center;
 }
 
+footer {
+    background: var(--nav-bg-color);
+    color: var(--nav-fg-color);
+
+    padding: 0.25em 0;
+    width: 100%;
+
+    text-align: center;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
+}
+.foot-container {
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .container-nav {
@@ -160,9 +175,9 @@ table.code tr > :first-child {
 
 .card-sport {
     background-color: transparent;
-    width:  25em;
-    height: 25em;
-    perspective: 1000px;
+    width:  27em;
+    height: 27em;
+    perspective: 30em;
 
     padding: 2em;
     border-radius: 50%;
@@ -184,7 +199,7 @@ table.code tr > :first-child {
 }
 
 .card-sport-front, .card-sport-back {
-    border-radius: 50%;
+    border-radius: 10%;
 
     position: absolute;
     width: 100%;
@@ -196,15 +211,24 @@ table.code tr > :first-child {
 .card-sport-front >img { width: 100%; }
 
 .card-sport-back {
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     background-color: var(--nav-bg-color);
     color: var(--nav-fg-color);
     transform: rotateY(180deg);
 
-    padding: 9em 2em;
+    padding: 5em 2em;
     text-align: justify;
     font-size: 0.75em;
 }
+
+.card-sport-back >p { padding: 1em 0; }
+.card-sport-back >iframe {
+    padding-top: 4em;
+    height: 100%;
+    width: 100%;
+}
+
+img.social { height: 1em; }
 
 @media screen and (max-width: 1410px) {
 
@@ -247,4 +271,3 @@ table.code tr > :first-child {
         min-height: calc(100vh - 25em);
     }
 }
-
