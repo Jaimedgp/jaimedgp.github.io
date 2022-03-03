@@ -76,6 +76,8 @@ nav ul {
 nav li {margin: 0 1em;}
 nav li:hover { color: var(--string-color); }
 
+img#theme { cursor: pointer; }
+
 section {
     padding: 3em 0;
     min-height: calc(100vh - 6em);

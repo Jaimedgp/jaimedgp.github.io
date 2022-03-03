@@ -40,3 +40,13 @@ window.addEventListener('resize', function() {
     console.log(window.innerHeight);
 });
 */
+
+function changeTheme() {
+    var theme = document.body.className;
+
+    if (theme == "light-theme") {
+        document.body.className = "dark-theme";
+    } else if (theme == "dark-theme") {
+        document.body.className = "light-theme";
+    }
+}

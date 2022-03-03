@@ -20,6 +20,11 @@ nav > ul {
     float: right;
 }
 
+div#theme {
+    cursor: pointer;
+    height: 1.25em;
+}
+
 nav ul > li { padding: 1rem; }
 
 table.code { border-collapse: collapse; }
