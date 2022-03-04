@@ -51,11 +51,11 @@ body.light-theme img.social:hover {
 }
 
 body.dark-theme img#theme {
-    content: url("../icons/moon-solid.svg");
+    content: url("../icons/sun.svg");
 }
 
 body.light-theme img#theme {
-    content: url("../icons/sun.svg");
+    content: url("../icons/moon-solid.svg");
 }
 table.code tr > :first-child   { color: var(--external-color); }
 
