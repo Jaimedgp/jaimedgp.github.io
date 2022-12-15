@@ -50,3 +50,17 @@ function changeTheme() {
         document.body.className = "light-theme";
     }
 }
+
+function closeHeader() {
+    // is portrait
+    if(window.innerHeight > window.innerWidth){
+        document.getElementsByTagName('header')[0].style.left = "-85%";
+    }
+}
+
+function openHeader() {
+    // is portrait
+    if(window.innerHeight > window.innerWidth){
+        document.getElementsByTagName('header')[0].style.left = "0";
+    }
+}

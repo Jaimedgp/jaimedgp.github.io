@@ -12,250 +12,262 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
         <link rel="icon" href="static/icons/white.png">
-        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/main.css">
     </head>
 
     <body class="dark-theme">
         <header>
-            <div class="container">
-                <div class="container-nav">
-                    <div class="header-title">
-                        <a href=""><b>Jaimedgp</b></a>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#laboral">Work</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#sport">Sport</a></li>
-                            <li><a href="static/doc/resume-en.pdf" title="My Resume">Resume</a></li>
-                            <div onclick="changeTheme()"><img id="theme" class="social"></img></div>
-                        </ul>
-                    </nav>
+            <div class="container-nav">
+                <div class="header-title">
+                    <a href="" onclick="closeHeader()"><b>Jaimedgp</b></a>
+                </div>
+                <nav>
+                    <ul>
+                        <!--<li><a href="#contact">Contact</a></li>-->
+                        <li><a href="#about" onclick="closeHeader()">About</a></li>
+                        <li><a href="#laboral" onclick="closeHeader()">Work</a></li>
+                        <li><a href="#projects" onclick="closeHeader()">Projects</a></li>
+                        <li><a href="static/doc/resume-en.pdf" title="My Resume">Resume</a></li>
+                        <li><div onclick="changeTheme()" onclick="closeHeader()"><img id="theme"></img></div></li>
+                    </ul>
+                </nav>
+                <div class="foot-social">
+                    <h1>Contact</h1>
+                    <ul>
+                        <li class="social"><img class="social" href="mailto:jaime.diez.gp@gmail.com" src="static/icons/email.png"></img></li>
+                        <li class="social"><img class="social" href="https://github.com/Jaimedgp" src="static/icons/github.png" alt="Jaimedgp"></img></li>
+                        <li class="social"><img class="social" href="https://www.linkedin.com/in/jaimedgp/" src="static/icons/linkedin.png" alt="Jaime Díez González-Pardo"></img> </li>
+                        <li class="social"><img class="social" href="https://orcid.org/0000-0001-7268-9933" src="static/icons/orcid.png" alt="0000-0001-7268-9933"></img> </li>
+                        <li class="social"><img class="social" href="https://www.strava.com/athletes/17781308" src="static/icons/strava-bw.png" alt="Jaime Diez"></img></li>
+                    </ul>
                 </div>
             </div>
         </header>
 
         <main>
-            <div class="container">
-                <section id="home">
-                    <div class="first">
-                        <div class="title">
-                            <div class="card code" id="title">
-                                me <span class="oper">=</span> <span class="func"><b>JaimeDGP</b></span>(~!<span class="param">data_scientist</span>,
-                                                                                                         ~!<span class="param">software_developer</span>,
-                                                                                                         ~!<span class="comment"># researcher,</span>
-                                                                                                         ~!<span class="param">physicist</span>,
-                                                                                                         ~!<span class="param">sport_love<span class="hghlhgt">r</span></span>)
-                            </div>
-                        </div>
-
-                        <div class="cards me">
-                            <div class="code card-about" id="contact">
-                                me.<span class="func">name</span>     <span class="oper">=</span> <span class="str">"Jaime"</span>
-                                me.<span class="func">lastname</span> <span class="oper">=</span> <span class="str">"Díez González-Pardo"</span>
-
-                                <span class="comment"># Contact information</span>
-                                <a class="a-contact" href="mailto:jaime.diez.gp@gmail.com"> me.<span class="func">email</span> <span class="oper">=</span> <span class="str">"jaime.diez.gp@gmail.com"</span> </a>
-                                me.<span class="func">city</span>  <span class="oper">=</span> [<span class="str">"Santander"</span>, <span class="str">"Cantabria"</span>, <span class="str">"Spain"</span>]
-
-                                <span class="comment"># Social media</span>
-                                <a class="a-contact" href="https://github.com/Jaimedgp">              me.<span class="func">github</span>   <span class="oper">=</span> <span class="str">"Jaimedgp"</span> </a>
-                                <a class="a-contact" href="https://www.linkedin.com/in/jaimedgp/">    me.<span class="func">linkedin</span> <span class="oper">=</span> <span class="str">"Jaime Díez González-Pardo"</span> </a>
-                                <a class="a-contact" href="https://orcid.org/0000-0001-7268-9933">    me.<span class="func">orcid</span>    <span class="oper">=</span> <span class="num">0000<span class="oper">-</span>0001<span class="oper">-</span>7268<span class="oper">-</span>9933 </span></a>
-                                <a class="a-contact" href="https://www.strava.com/athletes/17781308"> me.<span class="func">strava</span>   <span class="oper">=</span> <span class="str">"Jaime Diez"</span> </a>
-                            </div>
-
-                            <div class="code card-about" id="about">
-                                me.<span class="func">about</span> <span class="oper">=</span> <span class="str">"""</span>
-                                <span class="str">As a Data Scientist I have been able to combine my passion for programming </span>
-                                <span class="str">with the analytical and problem-solving skills I acquired in my Physics degree.</span>
-                                <span class="str">I have always tried to complement my academic knowledge with multidisciplinary</span>
-                                <span class="str">skills that allow me to integrate new tools in my work and personal projects.</span>
-
-                                <span class="str">So far I have been able to apply these skills in the different research</span>
-                                <span class="str">projects in which I have participated and in which I have always played the</span>
-                                <span class="str">role of the main developer of computational tools, such as simulations,</span>
-                                <span class="str">predictive modelling and data acquisition programs, and which have led in some</span>
-                                <span class="str">cases to the publication of scientific papers in journals and conferences.</span>
-                                <span class="str">"""</span>
-                            </div>
+            <section id="home">
+                <div class="content" id="home">
+                    <div class="title">
+                        <div class="card code" id="title">
+                            me <span class="oper">=</span> <span class="func"><b>JaimeDGP</b></span>(~!<span class="param">data_scientist</span>,
+                                                                                                        ~!<span class="param">software_developer</span>,
+                                                                                                        ~!<span class="comment"># researcher,</span>
+                                                                                                        ~!<span class="param">physicist</span>,
+                                                                                                        ~!<span class="param">sport_love<span class="hghlhgt">r</span></span>)
                         </div>
                     </div>
-                </section>
 
-                <section id="laboral">
-                    <div class="cards cv">
-                        <div class="code card-code" id="cic">
-                            <span class="comment"># Software</span>~!<span class="comment">&nbsp;Developer at CIC Consulting Informatico </span>
-                            <span class="func"><b>Developer</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2022<span class="oper">-</span>present</span>,
-                                                                        ~!<span class="param">company</span><span class="oper">=</span><span class="str">"CIC Consulting Informatico"</span>,
-                                                                        ~!<span class="param">location</span><span class="oper">=</span><span class="str">"Monitoring"</span>,
-                                                                        ~!<span class="param">description</span><span class="oper">=</span><span class="str">"""Memeber of the Datascience team to implement data</span>
-                                                                        ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">mining and machine learning solutions"""</span>
+                    <div class="cards me">
+                        <div class="code card-code" id="contact">
+                            me.<span class="func">name</span>     <span class="oper">=</span> <span class="str">"Jaime"</span>
+                            me.<span class="func">lastname</span> <span class="oper">=</span> <span class="str">"Díez González-Pardo"</span>
+
+                            <span class="comment"># Contact information</span>
+                            <a class="a-contact" href="mailto:jaime.diez.gp@gmail.com"> me.<span class="func">email</span> <span class="oper">=</span> <span class="str">"jaime.diez.gp@gmail.com"</span> </a>
+                            me.<span class="func">city</span>  <span class="oper">=</span> [<span class="str">"Santander"</span>, <span class="str">"Cantabria"</span>, <span class="str">"Spain"</span>]
+                        </div>
+
+                        <div class="code card-code" id="contact">
+                            <span class="comment"># Social media</span>
+                            <a class="a-contact" href="https://github.com/Jaimedgp">              me.<span class="func">github</span>   <span class="oper">=</span> <span class="str">"Jaimedgp"</span> </a>
+                            <a class="a-contact" href="https://www.linkedin.com/in/jaimedgp/">    me.<span class="func">linkedin</span> <span class="oper">=</span> <span class="str">"Jaime Díez González-Pardo"</span> </a>
+                            <a class="a-contact" href="https://orcid.org/0000-0001-7268-9933">    me.<span class="func">orcid</span>    <span class="oper">=</span> <span class="num">0000<span class="oper">-</span>0001<span class="oper">-</span>7268<span class="oper">-</span>9933 </span></a>
+                            <a class="a-contact" href="https://www.strava.com/athletes/17781308"> me.<span class="func">strava</span>   <span class="oper">=</span> <span class="str">"Jaime Diez"</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="content cards cv">
+                    <div class="myself">
+                        <img src="static/images/myself.png"></img>
+                    </div>
+                    <div class="code card-code" id="description">
+                        me.<span class="func">about</span> <span class="oper">=</span> <span class="str">"""</span>
+                        <span class="str">As a Data Scientist I have been able to combine my passion for programming </span>
+                        <span class="str">with the analytical and problem-solving skills I acquired in my Physics degree.</span>
+                        <span class="str">I have always tried to complement my academic knowledge with multidisciplinary</span>
+                        <span class="str">skills that allow me to integrate new tools in my work and personal projects.</span>
+
+                        <span class="str">So far I have been able to apply these skills in the different research</span>
+                        <span class="str">projects in which I have participated and in which I have always played the</span>
+                        <span class="str">role of the main developer of computational tools, such as simulations,</span>
+                        <span class="str">predictive modelling and data acquisition programs, and which have led in some</span>
+                        <span class="str">cases to the publication of scientific papers in journals and conferences.</span>
+                        <span class="str">"""</span>
+                    </div>
+                </div>
+            </section>
+
+        <section id="laboral">
+            <div class="content cards cv">
+                <div class="code card-code" id="cic">
+                    <span class="comment"># Software</span>~!<span class="comment">&nbsp;Developer at CIC Consulting Informatico </span>
+                    <span class="func"><b>Developer</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2022<span class="oper">-</span>present</span>,
+                                                                ~!<span class="param">company</span><span class="oper">=</span><span class="str">"CIC Consulting Informatico"</span>,
+                                                                ~!<span class="param">location</span><span class="oper">=</span><span class="str">"Monitoring"</span>,
+                                                                ~!<span class="param">description</span><span class="oper">=</span><span class="str">"""Memeber of the Datascience team to implement data</span>
+                                                                ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">mining and machine learning solutions"""</span>
+                                                                ~!)
+                </div>
+
+                <div class="code card-code" id="researcher">
+                    <span class="comment"># Researche</span>~!<span class="comment">r at University of Cantabria</span>
+                    <span class="func"><b>Researcher</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2020<span class="oper">-</span>2021</span>,
+                                                                ~!<span class="param">company</span><span class="oper">=</span><span class="str">"University of Cantabria"</span>,
+                                                                ~!<span class="param">location</span><span class="oper">=</span><span class="str">"Department of Chemical and Biomolecular Engineering"</span>,
+                                                                ~!<span class="param">description</span><span class="oper">=</span><span class="str">"""Participation as a contracted researcher in the</span>
+                                                                ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">project: 'CONTAMINACION ATMOSFERICA Y COVID-19: ¿QUE PODEMOS</span>
+                                                                ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">APRENDER DE ESTA PANDEMIA?' funded by the BBVA Fundation"""</span>
+                                                                ~!)
+
+                </div>
+
+                <div class="code card-code" id="ifca">
+                    <span class="comment"># External</span>~!<span class="comment">&nbsp;Intership at IFCA</span>
+                    <span class="func"><b>Intership</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2018</span>,
+                                                                ~!<span class="param">company</span><span class="oper">=</span><span class="str">"Instituto de Física de Cantabria"</span>,
+                                                                ~!<span class="param">location</span><span class="oper">=</span><span class="str">"High Energy Physics and Instrumentation group"</span>,
+                                                                ~!<span class="param">description</span><span class="oper">=</span><span class="str">"""Main developer of MULTI-DAQ, a data acquisition</span>
+                                                                ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">software for an experiment of the measure of the muon life time</span>
+                                                                ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">in C++"""</span>
+                                                                ~!)
+
+                </div>
+
+                <div class="code card-code" id="master">
+                    <span class="comment"># Master in Dat</span>~!<span class="comment">a Science</span>
+                    <span class="func"><b>MScDataScience</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2019<span class="oper">-</span>2021</span>,
+                                                                    ~!<span class="param">institution</span><span class="oper">=</span><span class="str">"University of Cantabria"</span>,
+                                                                    ~!<span class="param">specialization_module</span><span class="oper">=</span><span class="str">"Data Science Analytics"</span>,
+                                                                    ~!<span class="param">thesis</span><span class="oper">=</span><span class="str">"""Impact of the restrictions derived from the COVID-19</span>
+                                                                    ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">pandemic on air quality levels: application to urban</span>
+                                                                    ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">traffic sites in Spain"""</span>
+                                                                    ~!)
+
+                </div>
+
+                <div class="code card-code" id="physics">
+                    <span class="comment"># Degree in Phys</span>~!<span class="comment">ics</span>
+                    <span class="func"><b>DegreeInPhysics</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2015<span class="oper">-</span>2019</span>,
+                                                                        ~!<span class="param">institution</span><span class="oper">=</span><span class="str">"University of Cantabria"</span>,
+                                                                        ~!<span class="param">mention</span><span class="oper">=</span><span class="str">"Fundamental Physics"</span>,
+                                                                        ~!<span class="param">thesis</span><span class="oper">=</span><span class="str">"""Simulation of optical frequency comb generated by</span>
+                                                                        ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">semiconductor lasers"""</span>,
+                                                                        ~!<span class="param">in_addition</span><span class="oper">=</span><span class="str">"""additional training in Computer Engineering's</span>
+                                                                        ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">subject Databases"""</span>
                                                                         ~!)
-                        </div>
 
-                        <div class="code card-code" id="researcher">
-                            <span class="comment"># Researche</span>~!<span class="comment">r at University of Cantabria</span>
-                            <span class="func"><b>Researcher</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2020<span class="oper">-</span>2021</span>,
-                                                                        ~!<span class="param">company</span><span class="oper">=</span><span class="str">"University of Cantabria"</span>,
-                                                                        ~!<span class="param">location</span><span class="oper">=</span><span class="str">"Department of Chemical and Biomolecular Engineering"</span>,
-                                                                        ~!<span class="param">description</span><span class="oper">=</span><span class="str">"""Participation as a contracted researcher in the</span>
-                                                                        ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">project: 'CONTAMINACION ATMOSFERICA Y COVID-19: ¿QUE PODEMOS</span>
-                                                                        ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">APRENDER DE ESTA PANDEMIA?' funded by the BBVA Fundation"""</span>
-                                                                        ~!)
+                </div>
 
-                        </div>
+                <div class="code card-code" id="ib">
+                    <span class="comment"># I</span>~!<span class="comment">nternational Baccalaureate</span>
+                    <span class="func"><b>IB</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2013<span class="oper">-</span>2015</span>,
+                                                                                ~!<span class="param">institution</span><span class="oper">=</span><span class="str">"Instituto Santa Clara, Santander"</span>,
+                                                                                ~!<span class="param">type</span><span class="oper">=</span><span class="str">"High School Studie"</span>,
+                                                                                ~!<span class="param">information</span><span class="oper">=</span><span class="str">"""Studied simultaneously with 'Bachillerato Nacional' and</span>
+                                                                                ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str"> completed in two years following High School's schedule"""</span>
+                                                                                ~!)
+                </div>
+            </section>
 
-                        <div class="code card-code" id="ifca">
-                            <span class="comment"># External</span>~!<span class="comment">&nbsp;Intership at IFCA</span>
-                            <span class="func"><b>Intership</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2018</span>,
-                                                                       ~!<span class="param">company</span><span class="oper">=</span><span class="str">"Instituto de Física de Cantabria"</span>,
-                                                                       ~!<span class="param">location</span><span class="oper">=</span><span class="str">"High Energy Physics and Instrumentation group"</span>,
-                                                                       ~!<span class="param">description</span><span class="oper">=</span><span class="str">"""Main developer of MULTI-DAQ, a data acquisition</span>
-                                                                       ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">software for an experiment of the measure of the muon life time</span>
-                                                                       ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">in C++"""</span>
-                                                                       ~!)
-
-                        </div>
-
-                        <div class="code card-code" id="master">
-                            <span class="comment"># Master in Dat</span>~!<span class="comment">a Science</span>
-                            <span class="func"><b>MScDataScience</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2019<span class="oper">-</span>2021</span>,
-                                                                            ~!<span class="param">institution</span><span class="oper">=</span><span class="str">"University of Cantabria"</span>,
-                                                                            ~!<span class="param">specialization_module</span><span class="oper">=</span><span class="str">"Data Science Analytics"</span>,
-                                                                            ~!<span class="param">thesis</span><span class="oper">=</span><span class="str">"""Impact of the restrictions derived from the COVID-19</span>
-                                                                            ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">pandemic on air quality levels: application to urban</span>
-                                                                            ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">traffic sites in Spain"""</span>
-                                                                            ~!)
-
-                        </div>
-
-                        <div class="code card-code" id="physics">
-                            <span class="comment"># Degree in Phys</span>~!<span class="comment">ics</span>
-                            <span class="func"><b>DegreeInPhysics</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2015<span class="oper">-</span>2019</span>,
-                                                                             ~!<span class="param">institution</span><span class="oper">=</span><span class="str">"University of Cantabria"</span>,
-                                                                             ~!<span class="param">mention</span><span class="oper">=</span><span class="str">"Fundamental Physics"</span>,
-                                                                             ~!<span class="param">thesis</span><span class="oper">=</span><span class="str">"""Simulation of optical frequency comb generated by</span>
-                                                                             ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">semiconductor lasers"""</span>,
-                                                                             ~!<span class="param">in_addition</span><span class="oper">=</span><span class="str">"""additional training in Computer Engineering's</span>
-                                                                             ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">subject Databases"""</span>
-                                                                             ~!)
-
-                        </div>
-
-                        <div class="code card-code" id="ib">
-                            <span class="comment"># International Baccalaurea</span>~!<span class="comment">te</span>
-                            <span class="func"><b>InternationalBaccalaureate</b></span>(~!<span class="param">years</span><span class="oper">=</span><span class="num">2013<span class="oper">-</span>2015</span>,
-                                                                                        ~!<span class="param">institution</span><span class="oper">=</span><span class="str">"Instituto Santa Clara, Santander"</span>,
-                                                                                        ~!<span class="param">type</span><span class="oper">=</span><span class="str">"High School Studie"</span>,
-                                                                                        ~!<span class="param">information</span><span class="oper">=</span><span class="str">"""Studied simultaneously with</span>
-                                                                                        ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'Bachillerato Nacional' and completed in two</span>
-                                                                                        ~!&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">years following High School's schedule"""</span>
-                                                                                        ~!)
-
-                        </div>
-                    </div>
-                </section>
-
-                <section id="projects">
-                    <div class="cards git">
-                        <div class="card-project">
-                            <div class="card-content">
-                                <a href="https://github.com/Jaimedgp/Muon-Experiment-reader">
-                                    <div class="card-title">
-                                        <img src="static/images/Muon.png"></img>
-                                        <h2>MULTI-DAQ</h2>
-                                    </div>
-                                </a>
-                                <p>In 2018 I developed a data acquisition program to measure muon half-life
-                                written in C++ for the high energy department of the Institute of Physics
-                                of Cantabria (IFCA) with the aim of being used in an experiment of the
-                                degree in Physics of the University of Cantabria</p>
-                                <div class="lang-codes">
-                                    <img src="static/icons/cpp.svg"></img>
+            <section id="projects">
+                <div class="content cards git">
+                    <div class="card-project">
+                        <div class="card-content">
+                            <a href="https://github.com/Jaimedgp/Muon-Experiment-reader">
+                                <div class="card-title">
+                                    <img src="static/images/Muon.png"></img>
+                                    <h2>MULTI-DAQ</h2>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="card-project">
-                            <div class="card-content">
-                                <a href="https://github.com/Jaimedgp/J_Graphics_P">
-                                    <div class="card-title">
-                                        <img src="static/images/JGP.png"></img>
-                                        <h2>J Graphics P</h2>
-                                    </div>
-                                </a>
-                                <p>During the first two years of university I developed a data analysis program
-                                with the aim of learning Python in a self-taught way, which would also help
-                                me in the laboratory practices of the degree. Thanks to this I was able to
-                                learn several Python modules such as pyqt5, numpy and matplotlib</p>
-                                <div class="lang-codes">
-                                    <img src="static/icons/python.svg"></img>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-project">
-                            <div class="card-content">
-                                <a href="https://github.com/Jaimedgp/jaimedgp.github.io">
-                                    <div class="card-title">
-                                        <img src="static/images/webpage.png"></img>
-                                        <h2>This Webpage</h2>
-                                    </div>
-                                </a>
-                                <p>I started developing this website as a personal project to learn about web
-                                development and to increase my knowledge of javascript, HTML and CSS. This
-                                project also allowed me to learn about Django and Nginx deployment.</p>
-                                <div class="lang-codes">
-                                    <img src="static/icons/js.svg"></img>
-                                    <img src="static/icons/css.svg"></img>
-                                    <img src="static/icons/html.svg"></img>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-project">
-                            <div class="card-content">
-                                <a href="https://github.com/Jaimedgp/AirQualityCOVID">
-                                    <div class="card-title">
-                                        <img src="static/images/airquality.png"></img>
-                                        <h2>AirQualityCOVID</h2>
-                                    </div>
-                                </a>
-                                <p>Code developed for the article "Estimating changes in air pollutant levels
-                                due to COVID-19 lockdown measures based on a business-as-usual prediction
-                                scenario using data mining models: A case-study for urban traffic sites in
-                                Spain", submitted to Environmental Software &amp; Modelling by
-                                J. González-Pardo et al. (2021).</p>
-                                <div class="lang-codes">
-                                    <img src="static/icons/r.svg"></img>
-                                    <img src="static/icons/python.svg"></img>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-project">
-                            <div class="card-content">
-                                <a href="https://github.com/Jaimedgp/pyAEMET">
-                                    <div class="card-title">
-                                        <img src="static/images/pyaemet.png"></img>
-                                        <h2>pyAEMET</h2>
-                                    </div>
-                                </a>
-                                <p>pyaemet is a python library developed to import and curate meteorological data
-                                from AEMET using its OpenData API REST. The library contains a series of methods that facilitate
-                                the download and filtering of daily climatological data.</p>
-                                <div class="lang-codes">
-                                    <img src="static/icons/python.svg"></img>
-                                </div>
+                            </a>
+                            <p>In 2018 I developed a data acquisition program to measure muon half-life
+                            written in C++ for the high energy department of the Institute of Physics
+                            of Cantabria (IFCA) with the aim of being used in an experiment of the
+                            degree in Physics of the University of Cantabria</p>
+                            <div class="lang-codes">
+                                <img src="static/icons/cpp.svg"></img>
                             </div>
                         </div>
                     </div>
-                </section>
 
+                    <div class="card-project">
+                        <div class="card-content">
+                            <a href="https://github.com/Jaimedgp/J_Graphics_P">
+                                <div class="card-title">
+                                    <img src="static/images/JGP.png"></img>
+                                    <h2>J Graphics P</h2>
+                                </div>
+                            </a>
+                            <p>During the first two years of university I developed a data analysis program
+                            with the aim of learning Python in a self-taught way, which would also help
+                            me in the laboratory practices of the degree. Thanks to this I was able to
+                            learn several Python modules such as pyqt5, numpy and matplotlib</p>
+                            <div class="lang-codes">
+                                <img src="static/icons/python.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-project">
+                        <div class="card-content">
+                            <a href="https://github.com/Jaimedgp/jaimedgp.github.io">
+                                <div class="card-title">
+                                    <img src="static/images/webpage.png"></img>
+                                    <h2>This Webpage</h2>
+                                </div>
+                            </a>
+                            <p>I started developing this website as a personal project to learn about web
+                            development and to increase my knowledge of javascript, HTML and CSS. This
+                            project also allowed me to learn about Django and Nginx deployment.</p>
+                            <div class="lang-codes">
+                                <img src="static/icons/js.svg"></img>
+                                <img src="static/icons/css.svg"></img>
+                                <img src="static/icons/html.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-project">
+                        <div class="card-content">
+                            <a href="https://github.com/Jaimedgp/AirQualityCOVID">
+                                <div class="card-title">
+                                    <img src="static/images/airquality.png"></img>
+                                    <h2>AirQualityCOVID</h2>
+                                </div>
+                            </a>
+                            <p>Code developed for the article "Estimating changes in air pollutant levels
+                            due to COVID-19 lockdown measures based on a business-as-usual prediction
+                            scenario using data mining models: A case-study for urban traffic sites in
+                            Spain", submitted to Environmental Software &amp; Modelling by
+                            J. González-Pardo et al. (2021).</p>
+                            <div class="lang-codes">
+                                <img src="static/icons/r.svg"></img>
+                                <img src="static/icons/python.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-project">
+                        <div class="card-content">
+                            <a href="https://github.com/Jaimedgp/pyAEMET">
+                                <div class="card-title">
+                                    <img src="static/images/pyaemet.png"></img>
+                                    <h2>pyAEMET</h2>
+                                </div>
+                            </a>
+                            <p>pyaemet is a python library developed to import and curate meteorological data
+                            from AEMET using its OpenData API REST. The library contains a series of methods that facilitate
+                            the download and filtering of daily climatological data.</p>
+                            <div class="lang-codes">
+                                <img src="static/icons/python.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!--
                 <section id="sport">
                     <div class="cards">
                         <div class="card-sport">
@@ -336,15 +348,17 @@
                         </div>
                     </div>
                 </section>
-            </div>
+                <section id="papers">
+                </section>
+        -->
         </main>
 
-        <!--
         <footer>
             <div class="container">
                 <div class="foot-container">
-                    <div class="foot-social">
-                        <h2>Contact</h2>
+                    <div class="foot">
+                        <h1>Contact</h1>
+                            <!--
                             <ul>
                                 <li><a href="mailto:jaime.diez.gp@gmail.com">jaime.diez.gp@gmail.com</a></li>
                                 <li><a href="https://github.com/Jaimedgp">
@@ -360,22 +374,18 @@
                                     <img class="social" src="static/icons/strava-bw.png" alt="Jaime Diez"></img>
                                     Jaime Diez</a></li>
                             </ul>
-                    </div>
-                    <div class="foot-index">
-                        <h2>Contact</h2>
+                            -->
                             <ul>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#laboral">Work</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#sport">Sport</a></li>
-                                <li><a href="static/doc/resume-en.pdf" title="My Resume">Resume</a></li>
+                                <li class="social"><img class="social" href="mailto:jaime.diez.gp@gmail.com" src="static/icons/email.png"></img></li>
+                                <li class="social"><img class="social" href="https://github.com/Jaimedgp" src="static/icons/github.png" alt="Jaimedgp"></img></li>
+                                <li class="social"><img class="social" href="https://www.linkedin.com/in/jaimedgp/" src="static/icons/linkedin.png" alt="Jaime Díez González-Pardo"></img> </li>
+                                <li class="social"><img class="social" href="https://orcid.org/0000-0001-7268-9933" src="static/icons/orcid.png" alt="0000-0001-7268-9933"></img> </li>
+                                <li class="social"><img class="social" href="https://www.strava.com/athletes/17781308" src="static/icons/strava-bw.png" alt="Jaime Diez"></img></li>
                             </ul>
                     </div>
                 </div>
             </div>
         </footer>
-        -->
 
         <script type="text/javascript" src="code_style.js"></script>
     </body>
