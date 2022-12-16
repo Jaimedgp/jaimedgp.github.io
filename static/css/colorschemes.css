@@ -56,7 +56,7 @@ body.light-theme li.social:hover {
 body.dark-theme img#theme {
     filter: invert(42%) sepia(10%) saturate(10%)
             hue-rotate(345deg) brightness(93%) contrast(77%);
-    content: url("../icons/sun.svg");
+    content: url("../icons/sun.png");
 }
 body.dark-theme img#theme:hover {
     filter: invert(66%) sepia(11%) saturate(7449%)
