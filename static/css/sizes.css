@@ -32,7 +32,6 @@ div.me { font-size: 1.5em; }
 
 /* FOOTER */
 footer { font-size: 1rem; }
-
 .foot-container { padding: 3vh 10vh; }
 
 li.social {
@@ -52,7 +51,8 @@ img.social { height: 85%; }
 
 @media screen and (orientation: portrait){
     /* HEADER */
-    header { font-size: 2.2rem; }
+    header { font-size: 2.75rem; }
+    div.foot-social { font-size: 0.5em; }
 }
 
 @media screen and (max-width: 1310px) {
@@ -63,4 +63,5 @@ img.social { height: 85%; }
 @media screen and (max-width: 960px) {
     .title { font-size: 1.75em; }
     .card-project { font-size: 1.75em; }
+
 }
