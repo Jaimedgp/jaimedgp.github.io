@@ -134,9 +134,9 @@ ul {
 
     /* HEADER */
     header {
-        width: 90vw;
+        width: 65vw;
 
-        left: -85%;
+        left: -60%;
         transition: 0.3s;
         border-radius: 0 4rem 4rem 0;
 
