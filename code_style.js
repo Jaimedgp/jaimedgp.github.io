@@ -54,7 +54,7 @@ function changeTheme() {
 function closeHeader() {
     // is portrait
     if(window.innerHeight > window.innerWidth){
-        document.getElementsByTagName('header')[0].style.left = "-85%";
+        document.getElementsByTagName('header')[0].style.left = "-60%";
     }
 }
 
