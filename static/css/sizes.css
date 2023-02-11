@@ -1,0 +1,67 @@
+html { font-size: max(0.85vw, 7px); }
+
+li {margin: 0.5em 0.75em;}
+
+
+
+.header-title { font-size: 1.75em; }
+img.social { height: 1em; }
+img#theme { height: 1em; }
+
+/* BODY */
+section { min-height: 100vh; }
+section#home { font-size: 1rem; }
+section#about { font-size: 1.0rem; }
+section#laboral { font-size: 1rem; }
+section#projects { font-size: 1rem; }
+
+/* title */
+
+.title {
+    font-size: 3.5em;
+    padding: 2em 0;
+    margin: 0 auto;
+}
+
+div.me { font-size: 1.5em; }
+.card-code { padding-left: 1em; }
+
+
+.myself > img { height: 30em; }
+
+
+/* FOOTER */
+footer { font-size: 1rem; }
+.foot-container { padding: 3vh 10vh; }
+
+li.social {
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    border-style: solid;
+    padding: 0.5em;
+}
+
+img.social { height: 85%; }
+
+@media screen and (orientation: landscape){
+    /* HEADER */
+    header { font-size: 1.2rem; }
+}
+
+@media screen and (orientation: portrait){
+    /* HEADER */
+    header { font-size: 2.75rem; }
+    div.foot-social { font-size: 0.5em; }
+}
+
+@media screen and (max-width: 1310px) {
+    .title { font-size: 2.5em; }
+    .card-project { font-size: 2em; }
+}
+
+@media screen and (max-width: 960px) {
+    .title { font-size: 1.75em; }
+    .card-project { font-size: 1.75em; }
+
+}

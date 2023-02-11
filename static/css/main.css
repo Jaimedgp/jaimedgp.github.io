@@ -1,12 +1,26 @@
-@import "size_layout.css";
-@import "script.css";
+/**
+ * @import "size_layout.css";
+ * @import "script.css";
+ */
+
 @import "colorschemes.css";
+@import "layout.css";
+@import "sizes.css";
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
     height: 100%;
 }
+
+body {
+    overflow-x: hidden;
+    font-family: monospace;
+}
+
+main { position: relative; }
+
 
 *{
     margin: 0;
@@ -14,23 +28,44 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul { list-style: none; }
+
+header {
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.header-title:hover { color: var(--string-color); }
+nav li:hover { color: var(--string-color); }
+
+img#theme { cursor: pointer; }
+
+a.a-contact:hover { font-weight: bold;}
+table.code tr > :first-child {
+    padding-right: 0.5em;
+    float: right;
+}
+
 body {
-    overflow-x: hidden;
-    font-family: "Latin Modern Mono Prop Light";
-
-    min-height: 100%;
-
-    display: flex;
-    flex-direction: column;
+    background-color: var(--bg-color);
+    color:            var(--text-color);
 }
-
-section {
-    display: grid;
-
-    grid-template-rows: 5vh 10vh max-content 5vh;
-    grid-template-columns: 10% 1fr 10%;
-
-    position: relative;
+header {
+    background: var(--nav-bg-color);
+    color: var(--nav-fg-color);
 }
+footer {
+    background: var(--nav-bg-color);
+    color: var(--nav-fg-color);
+}
+div.card-project { background: var(--nav-bg-color)}
+tr.row-link:hover { background: var(--nav-bg-color); }
 
-a { text-decoration: none; }
+section#about, section#projects { background: var(--bg-color-2); }
+

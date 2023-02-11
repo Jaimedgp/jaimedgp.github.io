@@ -15,7 +15,7 @@ nav > b {
 
 nav ul li > a { font-size: 30px; }
 
-table.code { width: max-content; }
+/*table.code { width: max-content; }*/
 table.code tr > :first-child { padding-right: 20px; }
 
 div#main {
@@ -85,5 +85,3 @@ table.footer-content th {
 }
 
 table.footer-content td { padding-bottom: 10px; }
-
-img.social { height: 25px; }

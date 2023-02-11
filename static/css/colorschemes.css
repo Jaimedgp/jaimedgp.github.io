@@ -1,6 +1,7 @@
 /* Dark Theme Colors */
 body.dark-theme {
     --bg-color:         #262626;
+    --bg-color-2:       #313131;
 
     --text-color:       #FFD7AF;
     --external-color:   #6C6C6C;
@@ -17,6 +18,7 @@ body.dark-theme {
 
 body.light-theme {
     --bg-color:         #E4E4E4;
+    --bg-color-2:       #EAEAEA;
 
     --text-color:       #5F8787;
     --external-color:   #9E9E9E;
@@ -31,32 +33,46 @@ body.light-theme {
     --nav-fg-color:     #626262;
 }
 
-body.dark-theme img.social {
+body.dark-theme li.social {
     filter: invert(42%) sepia(10%) saturate(10%)
             hue-rotate(345deg) brightness(93%) contrast(77%);
 }
 
-body.dark-theme img.social:hover {
+body.dark-theme li.social:hover {
     filter: invert(66%) sepia(11%) saturate(7449%)
             hue-rotate(24deg) brightness(97%) contrast(101%);
 }
 
-body.light-theme img.social {
-    filter: invert(34%) sepia(9%) saturate(17%) hue-rotate(333deg) brightness(105%) contrast(87%);
+body.light-theme li.social {
+    filter: invert(34%) sepia(9%) saturate(17%)
+            hue-rotate(333deg) brightness(105%) contrast(87%);
 }
 
-body.light-theme img.social:hover {
+body.light-theme li.social:hover {
     filter: invert(56%) sepia(48%) saturate(3572%)
             hue-rotate(52deg) brightness(98%) contrast(101%);
 }
 
 body.dark-theme img#theme {
-    content: url("../icons/sun.svg");
+    filter: invert(42%) sepia(10%) saturate(10%)
+            hue-rotate(345deg) brightness(93%) contrast(77%);
+    content: url("../icons/sun.png");
+}
+body.dark-theme img#theme:hover {
+    filter: invert(66%) sepia(11%) saturate(7449%)
+            hue-rotate(24deg) brightness(97%) contrast(101%);
 }
 
 body.light-theme img#theme {
+    filter: invert(34%) sepia(9%) saturate(17%)
+            hue-rotate(333deg) brightness(105%) contrast(87%);
     content: url("../icons/moon-solid.svg");
 }
+body.light-theme img#theme:hover {
+    filter: invert(56%) sepia(48%) saturate(3572%)
+            hue-rotate(52deg) brightness(98%) contrast(101%);
+}
+
 table.code tr > :first-child   { color: var(--external-color); }
 
 table.footer-content td > a { color: var(--nav-fg-color); }
@@ -79,7 +95,6 @@ span.hghlhgt {
     animation: 1.5s blink step-end infinite;
 }
 
-div.card-project { background: var(--nav-bg-color)}
 
 @keyframes "blink"{
     from, to {
