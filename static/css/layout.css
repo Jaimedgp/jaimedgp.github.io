@@ -89,6 +89,11 @@ section#projects > div.content {
 }
 .card-title > h2 { color: var(--string-color)}
 
+.extra-info {
+    display: flex;
+    justify-content: space-between;
+}
+
 .lang-codes {
     padding-bottom: 0.5em;
     text-align: right;
